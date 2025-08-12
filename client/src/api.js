@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 
-const BASE = 'http://localhost:5000/api';
+const BASE = 'https://betterbackend1.vercel.app/api';
 
 export const createComment = (data) => axios.post(`${BASE}/comments`, data).then(r => r.data);
 export const getCommentsForTask = (taskId, page=1, limit=10) => axios.get(`${BASE}/comments/task/${taskId}?page=${page}&limit=${limit}`).then(r => r.data);
