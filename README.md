@@ -1,63 +1,72 @@
-# 🌐 ConnectHub
+# Task Management System (React + Node.js)
 
-> A clean and modern **professional networking platform** inspired by LinkedIn.  
-> Built with **React**, **Tailwind CSS**, **Node.js**, and **MongoDB**, ConnectHub lets users create accounts, share text-only posts, view profiles, and explore a public feed in real-time.
-
----
-
-## 🚀 Live Demo
-
-- 🔗 **Frontend**: [https://minilinkedin-flame.vercel.app/](https://minilinkedin-flame.vercel.app/) 
-- 🔗 **Backend**: [https://linkedinbackerd.vercel.app/](https://linkedinbackerd.vercel.app/)
+A simple task management application with backend APIs for comments and a frontend interface for tasks.  
+Built with **Node.js (Express)** for the backend and **React** for the frontend.
 
 ---
 
-## ✨ Features
+## 📌 Features
 
-### ✅ User Authentication
-- Register & login with email + password  
-- Secure session using **JWT**  
-- User profile includes **name**, **email**, and **bio**
+### **Task 1** – Backend APIs
+- Add, edit, and delete comments for a given task.
+- Follows proper **CRUD principles**.
+- Includes **automated tests** for APIs.
 
-### 📰 Public Post Feed
-- Text-only post creation  
-- Displays all users’ posts in a **real-time feed**  
-- Shows **author name** and **timestamp**
+### **Task 2 (Bonus)** – Frontend Interface
+- Add, edit, and delete tasks using existing CRUD APIs.
+- Simple and responsive UI.
 
-### 👤 Profile Page
-- View any user’s public profile  
-- See their **bio** and **list of posts**
+---
+
+## 🚀 Live Demo & Walkthrough
+- **Deployed App**: [Click here to view](https://your-deployment-link.com)
+- **Video Walkthrough**: [Watch on Loom](https://your-video-link.com)
 
 ---
 
 ## 🛠️ Tech Stack
-
-| Layer     | Technology                          |
-|-----------|-------------------------------------|
-| Frontend  | React, Vite, Tailwind CSS           |
-| Backend   | Node.js, Express.js                 |
-| Database  | MongoDB + Mongoose                  |
-| Auth      | JWT, bcrypt.js                      |
-| Hosting   | Vercel (frontend & backend)         |
+- **Frontend**: React, Axios, TailwindCSS
+- **Backend**: Node.js, Express, MongoDB
+- **Testing**: Jest, Supertest
+- **Deployment**: Render / Vercel / Railway
 
 ---
 
-## ⚙️ Getting Started
+## 📂 Project Structure
 
-### 🧩 Clone Both Repositories
 
-#### 🔷 Frontend
+---
+## 📄 API Endpoints
 
-```bash
-git clone https://github.com/your-username/connecthub.git
-cd client
-npm install
-npm run dev
-```
+### Health Check
+| Method | Endpoint      | Description          |
+|--------|--------------|----------------------|
+| GET    | `/api/health` | Check API status     |
 
-#### 🔷 Backend
+### Comments
+| Method | Endpoint                  | Description                              |
+|--------|---------------------------|------------------------------------------|
+| POST   | `/api/comments`            | Create a new comment                     |
+| GET    | `/api/comments/task/:taskId` | Get comments for a task (with pagination) |
+| PUT    | `/api/comments/:id`        | Update a comment                         |
+| DELETE | `/api/comments/:id`        | Soft delete a comment                    |
+| GET    | `/api/comments/search`     | Search comments by keyword               |
 
-```bash 
-cd server
-npm install
-npm run dev
+---
+
+## 🧪 Running Locally
+**Why is this change needed?**
+Explain the purpose or bug fix.
+
+**API Changes**
+List endpoints added or modified.
+
+**Database Changes**
+Describe schema changes.
+
+**UI Changes**
+Attach screenshots if applicable.
+
+**Testing**
+Mention manual and automated test coverage.
+
