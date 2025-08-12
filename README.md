@@ -19,7 +19,7 @@ Built with **Node.js (Express)** for the backend and **React** for the frontend.
 ---
 
 ## 🚀 Live Demo & Walkthrough
-- **Deployed App**: [Click here to view](https://your-deployment-link.com)
+- **Deployed App**: [https://betterfronted.vercel.app/](https://betterfronted.vercel.app/)
 - **Video Walkthrough**: [Watch on Loom](https://your-video-link.com)
 
 ---
