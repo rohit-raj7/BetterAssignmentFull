@@ -11,7 +11,7 @@ const app = express();
 
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://shortener-blue.vercel.app',
+  'https://betterfronted.vercel.app',
 ];
 
 app.use(cors({
